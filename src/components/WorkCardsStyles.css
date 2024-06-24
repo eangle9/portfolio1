@@ -1,45 +1,131 @@
-.title{
-    padding: 4rem 0 2rem 0;
+/* .work-card{
+    width: 100%;
+} */
+.title {
+    padding: 4rem 0 1rem 0;
     text-align: center;
 }
-.card-container{
+
+.card-wrapper {
+    width: 100%;
+    padding: 6rem 1rem;
+}
+
+.card-container {
     max-width: 1140px;
     margin: auto;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(4,1fr);
     grid-gap:40px;
     margin-bottom: 4rem;
 }
-.project-card{
+
+.project-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border: 1px solid rgba(193, 193, 191, 0.403);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.image-wrapper {
     background: #1a1919;
     padding: 1.2rem 1rem;
-}
-.project-card img{
     width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 }
-.pro-title{
+
+.project-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.pro-title {
     color: #fff;
-    padding: 1rem 0;
+    padding: 5px 0;
 }
-.pro-content {
-    font-size:1.1rem;
-    padding-bottom: 1rem;
+
+.pro-content p {
+    font-size: 14px;
+    margin-bottom: 1rem;
+    padding: 0 15px;
     text-align: justify;
+    opacity: 0.7;
 }
-.pro-btns{
+
+.pro-btns {
     display: flex;
-    justify-content: space-between;
-
+    gap: 20px;
 }
 
-
-@media screen and (max-width:740px){
-    .card-container{
-        max-width: 90%;
-        margin: auto;
-        grid-template-columns: 1fr;
-
+@media screen and (max-width: 1024px) {
+    .card-container {
+        grid-template-columns: repeat(3, 1fr);
     }
-   
-
+    .btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .pro-btns {
+        gap: 10px;
+    }
 }
+
+@media screen and (max-width: 768px) {
+    .card-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .btn{
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+    .pro-btns {
+        gap: 13px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .btn{
+        padding: 12px 24px;
+        font-size: 16px;
+    }
+    .pro-btns {
+        gap: 18px;
+    }
+}
+
+/* @media screen and (max-width: 480px) {
+    .card-container {
+        grid-template-columns: 1fr;
+        padding: 0 10px;
+    }
+
+    .btn{
+        padding: 6px 12px;
+        font-size: 12px;
+        font-weight: 500;
+    }
+    
+    .pro-btns{
+        gap: 10px;
+    }
+} */
+
+/* 
+@media screen and (max-width: ) {
+    
+} */

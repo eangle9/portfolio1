@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const PricingCards = () => {
     return (
         <div className='pricing'>
-           <div className='card-container'>
+           <div className='pricing-container'>
                <div className='card'>
                    <h3>- Basic -</h3>
                    <span className='bar'></span>

@@ -3,7 +3,7 @@
     padding: 6rem 1rem;
     background: #000;
 }
-.card-container{
+.pricing-container{
     max-width: 1140px;
     margin: auto;
     display: grid;
@@ -47,10 +47,19 @@
 
 
 
-@media screen and (max-width:740px){
-    .card-container{
+@media screen and (max-width:840px){
+    .pricing-container{
+        max-width: 90%;
+        margin: auto;
+        grid-template-columns: repeat(2, 1fr); 
+    }   
+}
+
+@media screen and (max-width:640px){
+    .pricing-container{
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;    
 }
 }
+

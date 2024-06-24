@@ -17,14 +17,14 @@ ul{
   list-style-type: none;
 }
 .btn{
-  padding: 12px 32px;
-  font-size: 1rem;
+  padding: 12px 24px;
+  font-size: 14px;
   text-transform: uppercase;
-  background: rgba(248, 217, 15);
+  background: rgba(248, 217, 15, 0.947);
   color: #222;
-  border: 1px solid #fff;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
+  border-radius: 4px;
 }
 .btn-light{
   background: transparent;
@@ -33,5 +33,6 @@ ul{
 .btn:hover{
   background: rgba(255, 255, 255, 0.2);
   color: #fff;
-  transition: 0.3s;
+  border: 0.5px solid #ffffff71;
+  transition: 0.3s ease-in-out all;
 }
